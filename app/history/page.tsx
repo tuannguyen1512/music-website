@@ -1,7 +1,7 @@
 import getHistorySongs from "@/actions/getHistorySongs";
 import Header from "@/components/Header";
 import Image from "next/image";
-// import HistoryContent from "./components/HistoryContent";
+import HistoryContent from "./components/HistoryContent";
 
 
 export const revalidate = 0;
@@ -24,7 +24,7 @@ const History = async () => {
                     </div>
                 </div>
             </Header>
-            {/* <HistoryContent songs={songs}/> */}
+            <HistoryContent songs={songs}/>
         </div>
     )
 }
